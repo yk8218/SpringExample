@@ -31,7 +31,7 @@ public class Api {
             JSONObject jsonObject = (JSONObject)jsonParser.parse(result);
             JSONObject body = (JSONObject)jsonObject.get("body");
             JSONArray items = (JSONArray)body.get("items");
-            JSONObject  FoodInfo= (JSONObject)items.get(0);
+            JSONObject FoodInfo = (JSONObject)items.get(0);
 
 
            // String FoodNm = "";

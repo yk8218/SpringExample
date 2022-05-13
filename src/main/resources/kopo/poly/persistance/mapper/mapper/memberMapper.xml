@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kopo.poly.persistance.mapper.IMemberMapper">
+    <!-- 게시판 글 작성 -->
+    <insert id="register">
+        INSERT INTO MP_MEMBER(   user_id
+                             , user_pw
+                             , user_name 	)
+        VALUES(    #{user_id}
+              , #{user_pw}
+              , #{user_name})
+    </insert>
+
+</mapper>
